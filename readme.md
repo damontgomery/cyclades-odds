@@ -8,7 +8,7 @@ In Cyclades, you resolve battles using a pair of dice. The attacker and defender
 ruby odds.rb > results.htm
 
 ## Findings
-Discussed at (http://boardgamegeek.com/article/18016625)[http://boardgamegeek.com/article/18016625].
+Discussed at [http://boardgamegeek.com/article/18016625](http://boardgamegeek.com/article/18016625).
 
 The unique die means that more or less, if you attack with equal forces, you have a 50% chance of winning. If you attack with 1 more, you have a 90% chance of winning. If you attack with 2 more, you are more or less guarenteed to win.
 
