@@ -39,7 +39,7 @@ unitRange.each do |unitCount|
 
       end
       
-      if units >= enemy
+      if units > enemy
         results[unitCount][enemyCount]['wins'] += 1
       else
         results[unitCount][enemyCount]['loses'] += 1
@@ -146,7 +146,7 @@ unitRange.each do |unitCount|
 
     puts '<td class="' + tdClass + '">'
 
-    puts (results[unitCount][enemyCount]['winPercent'] * 100).to_i.to_s + '% ( ' + results[unitCount][enemyCount]['expectedLoses'].to_s + ' : ' + results[unitCount][enemyCount]['expectedEnemyLoses'].to_s + ' )'
+    puts (results[unitCount][enemyCount]['winPercent'] * 100).to_i.to_s + '% ( ' + results[unitCount][enemyCount]['expectedLoses'].round(1).to_s + ' : ' + results[unitCount][enemyCount]['expectedEnemyLoses'].round(1).to_s + ' )'
 
     #puts JSON.pretty_generate(results[unitCount][enemyCount])[2..-2]
 
