@@ -148,8 +148,6 @@ unitRange.each do |unitCount|
 
     puts (results[unitCount][enemyCount]['winPercent'] * 100).to_i.to_s + '% ( ' + results[unitCount][enemyCount]['expectedLoses'].round(1).to_s + ' : ' + results[unitCount][enemyCount]['expectedEnemyLoses'].round(1).to_s + ' )'
 
-    #puts JSON.pretty_generate(results[unitCount][enemyCount])[2..-2]
-
     puts '</pre>'
   end
   
